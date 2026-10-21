@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kaisei+Tokumin&family=Yuji+Boku&family=Yuji+Mai&display=swap');
+
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(255, 68, 168);
+}
+
+h1 {font-size: 24px;}
+h2 {font-size: 20px;}
+h3 {font-size: 18px;}
+p {font-size: 12px;}
+h1,h2 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+img {
+    width: 300px;
+    height: auto;
+}
+
+table,
+        th,
+        td {
+            width: 50%;
+            table-layout: fixed;
+            text-align: center;
+            vertical-align: middle;
+            border: 2px solid black;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+#header {
+    text-align: center;
+    background-color: rgb(195, 255, 135);
+    color: rgb(48, 72, 7);
+}
+#header img {
+    width: 500px;
+    height: auto;
+    box-sizing: border-box;
+}
