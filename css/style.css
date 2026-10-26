@@ -23,18 +23,20 @@ h3 {
 
 label {
     font-size: 20;
-    color: black;
+    color: rgb(231, 98, 26);
     font-family: "Yuji Mai", serif;
 }
 
 legend {
     font-family: "Yuji Mai", serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(1, 118, 192);
 }
 
 
 #header h1 {
-    font-family: "Kaisei Tokumin", serif;
-    color: rgb(255, 217, 0);
+    font-family: "Anton", sans-serif;
     text-shadow:
         -2px -2px 0 white,
         -2px -2px 0 white,
@@ -63,7 +65,7 @@ legend {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 117, 237);
+    color: rgb(255, 0, 221);
     background: none;
 }
 ol {
@@ -84,7 +86,14 @@ ul li {
     
 }
 
+ol > li > h2 {
+    display: inline-block;      /* highlight selebar tulisan, bukan selebar layar */
+    background-color: rgb(149, 255, 250);
+    padding: 6px 18px;
+}
+
 #content li a {
+    border: 4px solid rgb(235, 68, 198);
     margin:auto;
     display: block;
     width: 250px;
@@ -102,7 +111,7 @@ li img {
 }
 
 #content ol > li {
-    border-bottom: 3px dashed rgb(255, 68, 168);
+    border-bottom: 3px solid rgb(255, 68, 168);
     padding-bottom: 40px;
     margin-bottom: 40px;
 }
@@ -112,6 +121,7 @@ li img {
 }
 
 ol > li {
+    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -140,12 +150,12 @@ tr:last-child td{
 
 #content {
     background-color: rgb(255, 255, 255);
-    border: 3px solid rgb(189, 242, 27);
+    border: 3px dashed rgb(242, 27, 149);
     border-radius: 16px;
     overflow: hidden;
 
     padding: 30px;
-    width: 90%;
+    width: 70%;
     margin: 30px auto;
 }
 
@@ -171,6 +181,25 @@ tr:last-child td{
     border-radius: 8px;
 }
 
+#vform textarea {
+    font-family: "Yuji Mai", serif;
+    padding: 6px 16px;
+    border-radius: 16px;
+}
+
+#vform input[type="submit"]{
+    background-color: rgb(195, 255, 249);
+    padding: 10px 30px;
+    border-radius: 16px;
+    font-family: "Yuji Mai", serif;
+    font-weight: bold;
+}
+
+#vform input::placeholder{
+    font-size: 20px;
+    font-family: "Sunshiney", cursive;
+}
+
 #vform input,
 #vform select {
     margin-bottom: 16px;
@@ -179,6 +208,11 @@ tr:last-child td{
 #vform label {
     display: inline-block;
     width: 120px;
+}
+
+#vform input[type="checkbox"]:checked + label {
+    font-weight: bold;
+    color: rgb(255, 68, 168);
 }
 
 #vform label.cek {
@@ -195,7 +229,7 @@ tr:last-child td{
     background-color: rgb(248, 255, 197);
     background-image: url("../img/xiexie.jpg");
     background-repeat: no-repeat;
-    background-position: 95% 20%;
+    background-position: 85% 20%;
     background-size: 250px;
     border: 3px solid rgb(235, 68, 198);
     border-radius: 16px;
@@ -204,6 +238,11 @@ tr:last-child td{
     padding: 30px;
     width: 90%;
     margin: 30px auto;
+}
+
+#area input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: rgb(255, 68, 168);
 }
 
 #area {
