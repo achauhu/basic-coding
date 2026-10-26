@@ -65,7 +65,8 @@
             <h2> Animal Facts</h2>
         </div>
         <table>
-            <tr>
+            <div class="up">
+            <tr style="background-color: rgb(249, 167, 221);">
                 <th rowspan="2">Family</th>
                 <th rowspan="2">Animal</th>
                 <th colspan="3">Lifestyle</th>
@@ -75,6 +76,7 @@
                 <th>Habitat</th>
                 <th>Most Active</th>
             </tr>
+            </div>
             <tr>
                 <td rowspan="2">Feline</td>
                 <td>Lynx</td>
@@ -123,9 +125,9 @@
         <h2>Plan Your Visit</h2>
         <form>
             <label for="fname">Full name</label>
-            <input type="text" id="fname" name="fname" value="e.g Thasya Trias Putri"><br>
+            <input type="text" id="fname" name="fname" placeholder="e.g Thasya Trias Putri"><br>
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" value="you@example.com"> <br>
+            <input type="text" id="email" name="email" placeholder="you@example.com"> <br>
             <label for="vdate">Visit date</label>
             <input type="date" id="vdate" name="vdate"><br>
             <label for="ticket">Tickets</label>
@@ -134,18 +136,19 @@
             <select id="ttype" name="ttype">
                 <option value="adult">Adult</option>
                 <option value="student">Student</option>
-                <option value="childe">Child</option>
+                <option value="child">Child</option>
+                <option value="vip">Pet VIP</option>
             </select>
             <div id="area">
-            <fieldset>
-                <legend>Which area do you want to see first?</legend>
-                <input type="radio" id="feline" name="family" value="Feline">
-                <label for="feline">Feline</label>
-                <input type="radio" id="canine" name="family" value="Canine">
-                <label for="canine">Canine</label>
-                <input type="radio" id="bird" name="family" value="Bird">
-                <label for="bird">Bird</label>
-            </fieldset>
+                <fieldset>
+                    <legend>Which area do you want to see first?</legend>
+                    <input type="radio" id="feline" name="family" value="Feline">
+                    <label for="feline">Feline</label>
+                    <input type="radio" id="canine" name="family" value="Canine">
+                    <label for="canine">Canine</label>
+                    <input type="radio" id="bird" name="family" value="Bird">
+                    <label for="bird">Bird</label>
+                </fieldset>
             </div>
             <input type="checkbox" id="snews" name="snews" value="News">
             <label for="snews">Send me news about the zoo</label><br>
