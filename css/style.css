@@ -6,7 +6,15 @@
 }
 
 body {
-    background: rgb(240, 223, 255);
+    background: linear-gradient(-45deg, #ff44a8, #f8ffc5, #ebb4ff, #a8f0ff);
+    background-size: 400% 400%;
+    animation: gerak 12s ease infinite;
+}
+
+@keyframes gerak {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 h2 {
@@ -125,8 +133,12 @@ ol > li {
     margin-bottom: 40px;
 }
 
+table {
+    zoom: 1.2;   /* 120% */
+}
+
 table{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     table-layout: fixed;
     border-collapse: collapse;
@@ -226,6 +238,7 @@ tr:last-child td{
 }
 
 #vform {
+    /* xiexie emeng */
     background-color: rgb(248, 255, 197);
     background-image: url("../img/xiexie.jpg");
     background-repeat: no-repeat;
@@ -267,18 +280,17 @@ tr:last-child td{
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 #src h2 {
-    color: aliceblue;
+    color: #e7f4ff;
     font-family: "Anton", sans-serif;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
+    letter-spacing: px;
 }
 
-#src ol {
-    list-style-position: inside;
+#src li {
+    display: inline-flex;
 }
 
 #src a {
